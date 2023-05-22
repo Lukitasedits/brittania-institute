@@ -1,0 +1,67 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(16, 16, 16);
+  z-index: 1;
+
+  .logo {
+    height: 50px;
+    width: 250px;
+    margin-left: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../../assets/images/Logo-Brittania2.png");
+  }
+
+
+  span{
+    color: snow;
+    font-family: 'Roboto';
+  }
+
+  .redes {
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .red {
+      cursor: pointer;
+      border: 5px solid #d7447c;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      background-size: 60%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      transition: all 0.1s ease-out;
+      //background-color: #d7447c;
+    }
+
+    .red:hover{
+      background-size: 50%;
+    }
+
+    #instagram {
+      background-image: url("../../assets/redes/instagram-violeta.png");
+    }
+    #facebook {
+      background-image: url("/assets/redes/facebook-violeta.png");
+    }
+    #whatsapp {
+      background-image: url("/assets/redes/whatsapp-violeta.png");
+    }
+  }
+
+  @media (max-width: 800px) {
+    span{
+      display: none;
+    }
+  }
+}

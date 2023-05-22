@@ -103,9 +103,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
   },
-  "defaultProject": "gabriela-app"
+  "cli": {
+    "analytics": "4b7e880d-7147-4d86-8e11-1a83bef26005"
+  }
 }

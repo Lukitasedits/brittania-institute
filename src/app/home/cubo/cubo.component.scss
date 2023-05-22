@@ -1,0 +1,53 @@
+.container {
+  perspective: 800px;
+}
+
+$dimension: 150px;
+
+.cube {
+  width: $dimension;
+  height: $dimension;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: $dimension;
+  height: $dimension;
+  background-color: #d7447c42;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  line-height: $dimension;
+}
+
+.front {
+  transform: translateZ($dimension/2);
+}
+.back {
+  transform: translateZ(-$dimension/2) rotateY(180deg);
+}
+.top {
+  transform: rotateX(90deg) translateZ($dimension/2);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ($dimension/2);
+}
+.left {
+  transform: rotateY(-90deg) translateZ($dimension/2);
+}
+.right {
+  transform: rotateY(90deg) translateZ($dimension/2);
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+

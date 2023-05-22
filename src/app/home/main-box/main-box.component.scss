@@ -1,0 +1,108 @@
+.col-1 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px;
+  background-color: rgb(253, 243, 240);
+
+  .text {
+    padding: 45px 15px;
+    border-radius: 10px;
+    width: 80%;
+    transition: all 0.5s ease-out;
+
+    h2 {
+      font-family: "Roboto";
+      font-weight: normal;
+      margin-bottom: 0;
+      color: #5544D6;
+    }
+
+    h1 {
+      font-family: "Roboto";
+      font-weight: bold;
+      font-size: 350%;
+      margin: 0;
+    }
+
+    h3 {
+      color: rgba($color: #d7447c, $alpha: 1);
+      font-family: "montserrat";
+      font-size: 100%;
+    }
+
+    .location {
+      display: flex;
+      div {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        background-image: url("/assets/icons/location.png");
+      }
+      span {
+        margin-left: 5px;
+        font-family: "roboto";
+      }
+    }
+
+    .button {
+      cursor: pointer;
+      transform: translateY(50px);
+      width: 120px;
+      height: 25px;
+      border-radius: 30px;
+      border: solid rgba($color: #d7447c, $alpha: 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba($color: #d7447c, $alpha: 1);
+      font-family: "roboto";
+      font-weight: bold;
+      padding: 7px;
+      transition: 0.1s ease;
+    }
+
+    .button:hover {
+      color: #fcecec;
+      background-color: #d7447c68;
+    }
+  }
+  @media (max-width: 570px) {
+    .text {
+      h1 {
+        font-size: 300%;
+      }
+    }
+  }
+}
+
+.col-2 {
+  width: 50%;
+  height: 100%;
+  background-image: url("/assets/images/london-background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(253, 243, 240);
+  transition: all 0.5s ease-out;
+  //background-position: center -100px;
+}
+
+@media (max-width: 500px) {
+  .col-1 {
+    width: 100%;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
+    z-index: 1;
+    backdrop-filter: blur(5px);
+  }
+  .col-2 {
+    width: 100%;
+    position: absolute;
+  }
+  .text {
+    h1 {
+      font-size: 300%;
+    }
+  }
+}

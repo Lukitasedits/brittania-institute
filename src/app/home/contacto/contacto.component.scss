@@ -1,0 +1,226 @@
+h1 {
+  margin-top: 0;
+  font-family: "Roboto";
+  font-size: 70px;
+  border-top: 5px #d7447c solid;
+  width: 100%;
+  margin-bottom: 0;
+  text-align: center;
+  background: linear-gradient(to right, transparent 50%, #d7447c 50%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  .linea {
+    width: 30%;
+    height: 5px;
+    background-color: black;
+  }
+}
+
+span {
+  font-family: "Wix Madefor Display";
+  font-size: 20px;
+  width: 100%;
+  padding-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(to right, transparent 50%, #d7447c 50%);
+}
+
+.cuerpo {
+  display: flex;
+  width: 100%;
+  height: 800px;
+
+  .redes-sociales {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .redes-sociales-texto {
+      font-family: "Wix Madefor Display";
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 20px;
+      transition: all 0.5s ease-out;
+      transform: translateX(0);
+
+      h3 {
+        margin-bottom: 0;
+        margin-top: 15px;
+        color: #d7447c;
+        padding-left: 50px;
+      }
+
+      .redes {
+        display: flex;
+        padding-left: 50px;
+
+        .red {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+          img {
+            margin: 5px;
+          }
+        }
+      }
+
+      .correo-electronico {
+        display: flex;
+        flex-direction: column;
+
+        .mail {
+          padding-left: 50px;
+          display: flex;
+          align-items: center;
+
+          img {
+            margin: 5px;
+          }
+          a {
+            margin: 5px;
+          }
+        }
+      }
+
+      .telefono {
+        display: flex;
+        flex-direction: column;
+
+        .numero {
+          display: flex;
+          align-items: center;
+          padding-left: 50px;
+
+          img {
+            margin: 5px;
+          }
+          a {
+            margin: 5px;
+          }
+        }
+      }
+    }
+
+    .contact-us-svg {
+      border-top: #d7447c solid 5px;
+      margin: 50px;
+      width: 500px;
+      height: 500px;
+      opacity: 1;
+      transition: 0.3s;
+      padding-top: 20px;
+    }
+  }
+
+  .directo {
+    width: 50%;
+    height: 100%;
+    //padding-top: 30px;
+    background-color: #d7447c;
+    display: flex;
+    flex-direction: column;
+
+    span {
+      width: 100%;
+      color: rgb(253, 243, 240);
+      //margin: 20px;
+      padding-right: 10px;
+      //padding-bottom: 5px;
+      //border-bottom: 2px rgb(253, 243, 240) solid;
+    }
+
+    form {
+      //margin-top: 20px;
+      padding: 10px;
+
+      div {
+        width: 100%;
+        display: flex;
+
+        input {
+          font-size: 15px;
+          border-radius: 5px;
+          background-color: rgb(253, 243, 240);
+          width: 100%;
+          height: 30px;
+          margin: 10px;
+          font-family: "Wix Madefor Display";
+        }
+        textarea {
+          font-size: 15px;
+          border-radius: 5px;
+          font-family: "Wix Madefor Display";
+          background-size: 80%;
+          background-repeat: no-repeat;
+          background-position: 25px center;
+          background-blend-mode: color-burn;
+          background-color: rgb(253, 243, 240);
+          background-image: url("/assets/images/undraw_opinion_re_jix4.svg");
+          width: 100%;
+          height: 550px;
+          transition: 0.5s ease-out;
+          margin: 10px;
+          resize: none;
+        }
+        .submit{
+          cursor: pointer;
+          transition: 0.1s;
+        }
+        .submit:hover{
+          background-color: #febdd6;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 920px) {
+  h1{
+    background-color: #d7447c;
+  }
+
+  span{
+    background-color: #d7447c;
+  }
+
+  .cuerpo {
+    flex-direction: column;
+    height: 1000px;
+
+    .redes-sociales {
+      width: 100%;
+      height: 30%;
+      align-items: center;
+      justify-content: center;
+      //flex-direction: row;
+
+      .contact-us-svg{
+        position: absolute;
+        z-index: -1;
+        opacity: 0.2 ;
+      }
+    }
+
+    .directo {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      width: 100%;
+      height: 70%;
+
+      form{
+
+        div{
+
+          textarea{
+            height: 250px;
+          }
+        }
+      }
+    }
+  }
+}

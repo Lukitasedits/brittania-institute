@@ -1,0 +1,17 @@
+<h1>{{titulo}}</h1>
+<div class="caracteristicas">
+  <span *ngFor="let caracteristica of caracteristicas">{{caracteristica}}</span><br>
+  <span><strong>Carga Horaria: </strong>{{cargaHoraria}}</span>
+</div>
+<p [ngStyle]="{'transform': (entradaDescripcion)?'translateX(0)':''}">{{descripcion}}</p>
+
+<div class="examenes-wrap" >
+  <div class="examenes" [ngStyle]="{'transform': (entradaExamenes)?'translateY(0)':''}">
+    <h3>Los <strong>{{titulo}}</strong> tienene lo opción de rendir los siguientes exámenes internacionales:</h3>
+    <ul>
+      <li *ngFor="let examen of examenes">
+        <strong>{{examen.abreviatura}}</strong> - {{examen.nombre}}
+      </li>
+    </ul>
+  </div>
+</div>

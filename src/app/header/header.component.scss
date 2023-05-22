@@ -1,0 +1,34 @@
+
+.cover{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .logo{
+    cursor: pointer;
+    width: 200px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:contain;
+    background-image: url('/assets/images/Logo-Brittania.png');
+    margin-left: 20px;
+  }
+
+  .items{
+    margin-right: 20px;
+    span{
+      cursor: pointer;
+      font-family: 'Raleway';
+      margin: 10px;
+      font-weight: bold;
+      transition: 0.1s;
+    }
+    span:hover{
+      color: rgb(209, 6, 6);
+    }
+  }
+}

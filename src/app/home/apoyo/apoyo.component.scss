@@ -1,0 +1,59 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  height: 500px;
+  background-color:rgb(65, 8, 30);
+  padding: 50px;
+  padding-bottom: 70px;
+  color: rgb(253, 243, 240);
+  box-shadow: 0 0 5px #000;
+  overflow: hidden;
+  background-size: cover;
+  background-image: url('/assets/images/london-background6.jpg');
+  background-blend-mode: overlay;
+
+  h1{
+    font-family: 'Roboto';
+    display: flex;
+    font-size: 60px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    transition: all 0.5s;
+    width: 10%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+
+    $dimension-imagen: 50px;
+    img{
+      width: $dimension-imagen;
+      height: $dimension-imagen;
+      filter: invert(1);
+    }
+  }
+  p{
+    font-size: larger;
+    text-align: center;
+    font-family: "Wix Madefor Display", sans-serif;
+  }
+
+  .boton{
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Wix Madefor Display';
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 3px snow solid;
+    transition: 0.4s all;
+  }
+
+  .boton:hover{
+    background-color: #ffffff22;
+  }
+}

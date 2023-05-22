@@ -1,0 +1,118 @@
+<h1>
+  <div class="linea"></div>
+  CONTACTO
+  <div class="linea"></div>
+</h1>
+<span>Me podes contactar mediante:</span>
+<div class="cuerpo">
+  <div class="redes-sociales">
+    <div class="redes-sociales-texto"  [ngStyle]="{'transform': (vistaContacto)?'':'translateX(-500px)'}">
+
+    <h3>Redes sociales</h3>
+    <div class="redes" >
+      <div class="red">
+        <img
+          width="30px"
+          height="30px"
+          src="../../../assets/redes/instagram.png"
+          alt=""
+        />
+        <a
+          target="_blank"
+          href="https://www.instagram.com/brittaniaonline_institute/"
+        >
+          Instagram
+        </a>
+      </div>
+      <div class="red">
+        <img
+          width="30px"
+          height="30px"
+          src="../../../assets/redes/facebook.png"
+          alt=""
+        />
+        <a
+          target="_blank"
+          href="https://www.facebook.com/profile.php?id=100069508128401&mibextid=LQQJ4d"
+        >
+          Facebook
+        </a>
+      </div>
+      <div class="red">
+        <img
+          width="30px"
+          height="30px"
+          src="../../../assets/redes/whatsapp.png"
+          alt=""
+        />
+        <a target="_blank" href="https://wa.link/9avr5a"> Whatsapp </a>
+      </div>
+    </div>
+    <div class="correo-electronico">
+      <h3>Correo electrónico</h3>
+      <div class="mail">
+        <img
+          width="30px"
+          height="30px"
+          src="../../../assets/redes/mail.png"
+          alt=""
+        />
+        E-mail:
+        <a
+          target="_blank"
+          href="
+        brittaniaonlineinstitute@gmail.com"
+          >brittaniaonlineinstitute@gmail.com</a
+        >
+      </div>
+    </div>
+    <div class="telefono">
+      <h3>Teléfono</h3>
+      <div class="numero">
+        <img
+          width="30px"
+          height="30px"
+          src="../../../assets/redes/telefono.png"
+          alt=""
+        />
+        Teléfono: <a href="tel: 11 44085724">11 44085724</a>
+      </div>
+    </div>
+  </div>
+
+    <img
+      class="contact-us-svg"
+      src="../../../assets/images/undraw_contact_us_re_4qqt.svg"
+      alt=""
+      [ngStyle]="{'opacity': (vistaContacto)?'':'0'}"
+    />
+  </div>
+  <div class="directo">
+    <span
+      >O consultando de forma directa rellenando los siguientes campos:</span
+    >
+    <form action="https://formspree.io/f/xjvdzdpg"
+    method="POST">
+      <div class="row1">
+        <input type="text" placeholder="Nombre" name="name" required/>
+        <input type="text" placeholder="Correo electrónico" name="email" required/>
+      </div>
+      <div class="row2">
+        <input type="text" placeholder="Asunto"  name="asunto" required/>
+      </div>
+      <div class="row3">
+        <textarea
+          name="mensaje"
+          id=""
+          name="message"
+          placeholder="Excribe tu mensaje aquí..."
+          [ngStyle]="{'height': (vistaContacto)?'':'0'}"
+          required
+        ></textarea>
+      </div>
+     <div class="row4">
+        <input class="submit" type="submit"/>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="col-1">
+  <h1>HORARIOS</h1>
+  <span
+    >La variedad de horarios es amplia y está ligada al nivel que presente cada
+    alumno y a sus necesidades.</span
+  >
+  <div class="horarios">
+    <ul
+    [ngStyle]="{'transform': (horariosVisto)?'translateX(0)':''}"
+    >
+      <li>Martes, Jueves y Viernes por la mañana</li>
+      <li>Todos los días de la semana desde las 17hs hasta las 20hs</li>
+      <li>Sábados de 9hs a 13hs</li>
+    </ul>
+  </div>
+</div>
+<div class="col-2">
+  <img
+    [ngStyle]="{'transform': (horariosVisto)?'translateX(0)':'translateX(500px)'}"
+    src="../../../assets/images/undraw_time_management_re_tk5w.svg"
+    alt=""
+  />
+</div>

@@ -1,0 +1,112 @@
+<img
+  class="imagen-precarga"
+  src="/gabriela-app/src/assets/student-animation/student-body2.png"
+  alt="Imagen de precarga"
+/>
+<app-main-box></app-main-box>
+<div class="separador" id="separador1" #metodologia></div>
+<app-metodologia ></app-metodologia>
+
+<div class="separador" id="separador2">
+  <div class="linea" [ngStyle]="{ width: anchoLinea + 'px' }"></div>
+</div>
+
+<div class="plantel-docente" #plantelDocente>
+  <svg id="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#fdf3f0"
+      fill-opacity="1"
+      d="M0,288L60,250.7C120,213,240,139,360,122.7C480,107,600,149,720,176C840,203,960,213,1080,213.3C1200,213,1320,203,1380,197.3L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"
+    ></path>
+  </svg>
+
+  <app-plantel-docente
+    [ngStyle]="{
+      'background-position':
+        backgroundPositionX + 'px ' + backgroundPositionY + 'px'
+    }"
+  >
+  </app-plantel-docente>
+
+  <svg id="wave2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="rgb(253, 243, 240)"
+      fill-opacity="1"
+      d="M0,160L48,149.3C96,139,192,117,288,106.7C384,96,480,96,576,90.7C672,85,768,75,864,106.7C960,139,1056,213,1152,213.3C1248,213,1344,139,1392,101.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+    ></path>
+  </svg>
+</div>
+
+<div class="separador" id="separador4"></div>
+
+<div class="clases">
+  <div class="adultos" #adultos>
+    <svg id="wave3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="rgb(253, 243, 240)"
+        fill-opacity="1"
+        d="M0,64L0,192L288,192L288,32L576,32L576,256L864,256L864,224L1152,224L1152,256L1440,256L1440,0L1152,0L1152,0L864,0L864,0L576,0L576,0L288,0L288,0L0,0L0,0Z"
+      ></path>
+    </svg>
+    <app-clases
+      titulo="ADULTOS"
+      [examenes]="examenesAdultos"
+      descripcion="Orientado a personas adultas que quieran adquirir el idioma en forma paulatina pero firme. Incorporando contenido de a poco. Se crea un aula virtual donde se sube el material necesario para trabajar en clase, actividades interactivas, juegos, se recomiendan páginas para seguir practicando los temas vistos en clase. También tenemos nuestro rincón de lectura donde se comparte con los alumnos diferentes historias cortas y novelas para incentivar el placer por la lectura y al mismo tiempo adquirir vocabulario."
+      [caracteristicas]="caracteristicasAdultos"
+      cargaHoraria="2 horas semanales."
+      id="adultos"
+    ></app-clases>
+  </div>
+
+  <div class="separador" id="separador5" #sep5>
+    <div
+      class="linea-sep5"
+      [ngStyle]="{ width: desplegarLineasSep5 ? '35%' : '0' }"
+    ></div>
+    <app-cubo></app-cubo>
+    <div
+      class="linea-sep5"
+      [ngStyle]="{ width: desplegarLineasSep5 ? '35%' : '0' }"
+    ></div>
+  </div>
+  <div class="adolescentes" #adolescentes>
+    <app-clases
+      titulo="ADOLESCENTES"
+      [examenes]="examenesAdolescentes"
+      descripcion="Es importante que los adolescentes se encuentren motivados y en un ambiente propicio que favorezca el aprendizaje. En nuestros cursos se utilizan juegos interactivos y mucha interacción entre ellos. Se apunta a lograr una comunicación oral fluida atendiendo las individualidades de cada uno."
+      [caracteristicas]="caracteristicasAdolescentes"
+      cargaHoraria="2 y 3 horas semanales."
+      id="adolescentes"
+    >
+    </app-clases>
+    <svg id="wave4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#fdf3f0"
+        fill-opacity="1"
+        d="M0,64L0,160L144,160L144,160L288,160L288,288L432,288L432,288L576,288L576,160L720,160L720,256L864,256L864,64L1008,64L1008,0L1152,0L1152,224L1296,224L1296,32L1440,32L1440,320L1296,320L1296,320L1152,320L1152,320L1008,320L1008,320L864,320L864,320L720,320L720,320L576,320L576,320L432,320L432,320L288,320L288,320L144,320L144,320L0,320L0,320Z"
+      ></path>
+    </svg>
+  </div>
+</div>
+
+<div #horarios>
+  <app-horarios></app-horarios>
+</div>
+
+<div #apoyo>
+  <app-apoyo></app-apoyo>
+</div>
+
+<div class="separador" id="separador7">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#d7447c"
+      fill-opacity="1"
+      d="M0,256L48,261.3C96,267,192,277,288,288C384,299,480,309,576,298.7C672,288,768,256,864,224C960,192,1056,160,1152,165.3C1248,171,1344,213,1392,234.7L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+    ></path>
+  </svg>
+</div>
+
+<div #contacto>
+  <app-contacto></app-contacto>
+</div>

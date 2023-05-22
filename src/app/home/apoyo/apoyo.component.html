@@ -1,0 +1,12 @@
+<div class="container">
+
+  <h1 [ngStyle]="{'width': (vistaApoyo)?'100%':'0%'}">
+    CLASES INDIVIDUALES Y APOYO ESCOLAR
+  </h1>
+  <p>
+    Está destinado para aquellas personas que necesitan un horario o tema específico. También para aquellos que estén en el colegio y quieran reforzar algún contenido en particular o prepararse para un examen.
+  </p>
+  <div class="boton" [ngStyle]="{'transform': (vistaApoyo)?'translateY(0)':'translateY(300px)'}" (click)="scrollToConsulta()">
+    <b>CONSULTAR</b>
+  </div>
+</div>

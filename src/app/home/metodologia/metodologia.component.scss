@@ -1,0 +1,114 @@
+$color-texto: #d7447c;
+
+.esquina {
+  align-self: flex-start;
+  width: 20px;
+  height: 20px;
+  font-size: 50px;
+  margin: 10px 40px;
+  color: #000;
+}
+
+#esq2 {
+  align-self: flex-end;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  h1 {
+    .meto-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: solid $color-texto;
+      box-shadow: 0 0 5px $color-texto;
+      background-size: 65%;
+      margin-right: 20px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      //filter: invert(100%);
+      background-image: url("/assets/icons/metodologia.png");
+      transition: all 0.2s ease-out;
+    }
+
+    .meto-icon:hover {
+      background-size: 50%;
+    }
+
+    display: flex;
+    color: $color-texto;
+    font-family: "roboto";
+    font-size: 80px;
+    margin-bottom: 0;
+  }
+
+  .subrayado-metodologia {
+    height: 10px;
+    background-color: $color-texto;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes mymove {
+    0% {
+      width: 0px;
+    }
+    90% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .esquina {
+    display: none;
+  }
+  .titulo {
+    margin-top: 20px;
+  }
+}
+
+ul {
+  width: 80%;
+  height: auto;
+  text-align: center;
+  margin-top: 100px;
+  color: #000;
+  font-size: 20px;
+  font-family: "Wix Madefor Display", sans-serif;
+
+  li {
+    height: auto;
+    list-style: none;
+    margin: 20px;
+
+    strong {
+      color: #d7447c;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .titulo {
+    h1 {
+      .meto-icon {
+        width: 50px;
+        height: 50px;
+      }
+
+      font-size: 50px;
+    }
+  }
+  ul {
+    margin-top: 20px;
+  }
+}

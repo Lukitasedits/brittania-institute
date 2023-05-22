@@ -1,0 +1,87 @@
+h1 {
+  font-family: "Roboto";
+  font-size: 80px;
+  margin-bottom: 30px;
+  background-color: #d7447c6e;
+  height: 80px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 650px) {
+  h1{
+    font-size: 60px;
+  }
+}
+
+.caracteristicas {
+  font-family: "Wix Madefor Display", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 3s;
+  span{
+    padding: 2px;
+    background-color: rgba(0, 0, 0, 0.689);
+  }
+}
+
+p {
+  margin: 40px 80px;
+  font-family: "Wix Madefor Display", sans-serif;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 0 10px #000;
+  color: #000;
+  border-radius: 5px;
+  background: rgb(253, 243, 240);
+  //background: #F5D0DE;
+  transform: translateX(-120%);
+  transition: 0.5s ease-out;
+}
+
+hr {
+  height: 3px;
+  width: 80%;
+  background-color: snow;
+}
+
+.examenes-wrap {
+  border-top: solid snow 5px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  width: 820px;
+  overflow-y: hidden;
+  transition: all 0.25s ease-out;
+
+  .examenes {
+    background-color: #d7447c7b;
+    font-family: "Wix Madefor Display", sans-serif;
+    transform: translateY(-100%);
+    transition: all 0.5s ease-out;
+    padding: 10px;
+
+    h3 {
+      strong {
+      }
+    }
+
+    ul {
+      li {
+        cursor: default;
+        transition: all 0.2s;
+        strong {
+        }
+      }
+      li:hover {
+        font-size: 20px;
+      }
+    }
+  }
+}

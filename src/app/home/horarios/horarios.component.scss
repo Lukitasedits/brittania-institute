@@ -1,0 +1,55 @@
+.col-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 100px;
+
+  h1 {
+    align-self: flex-start;
+    color: rgb(215, 68, 124);
+    font-family: "Roboto";
+    font-size: 60px;
+  }
+  span {
+    font-family: "Wix Madefor Display";
+  }
+  .horarios{
+    overflow-y: hidden;
+
+    ul {
+      transform: translateY(-150%);
+      transition: 0.5s ease-out;
+      li {
+        font-family: "Wix Madefor Display";
+      }
+    }
+  }
+}
+
+.col-2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  $dimension-imagen: 500px;
+  img {
+    width: $dimension-imagen;
+    height: $dimension-imagen;
+    transition: 0.6s all ease-out;
+  }
+}
+
+@media (max-width: 1000px){
+  .col-1{
+    width: 100%;
+    height: 60%;
+  }
+  .col-2{
+    width: 100%;
+    height: 40%;
+    padding: 20px;
+  }
+
+}
